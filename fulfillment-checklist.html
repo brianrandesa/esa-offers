@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESA Fulfillment Checklist — The Client Journey</title>
+<style>
+  :root{--navy:#1f3a5f;--ink:#16212c;--bg:#f5f7f9;--card:#fff;--line:#e3e8ee;--muted:#6b7785;--amber:#9a7b1f;--g:#2e9e4f}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+  header{background:var(--navy);color:#fff;padding:22px 30px;position:sticky;top:0;z-index:10}
+  header h1{margin:0;font-size:21px;letter-spacing:-.3px}
+  header .sub{color:#aebfd2;font-size:12.5px;margin-top:3px}
+  .prog{margin-top:12px;font-size:12px;color:#cdd9e6}
+  .bar{height:6px;background:rgba(255,255,255,.15);border-radius:4px;margin-top:6px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:#5b9cf0;transition:width .2s}
+  main{max-width:920px;margin:0 auto;padding:22px 24px 80px}
+  .rules{background:#fff6e6;border:1px solid #f0dba8;border-radius:10px;padding:14px 16px;margin:6px 0 14px;font-size:12.8px;color:#6b5212}
+  .rules b{color:#5a4410}
+  .rules ul{margin:8px 0 0;padding-left:18px} .rules li{margin:4px 0}
+  .legend{font-size:11px;color:var(--muted);margin:0 0 18px}
+  .phase{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+  .ph{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-bottom:6px}
+  .num{background:var(--navy);color:#fff;font-weight:700;width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+  .pname{font-size:16px;font-weight:700}
+  .pill{font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:20px;white-space:nowrap}
+  .time{background:#eef2f7;color:#4a5663} .own{background:#e8edf3;color:#3a4756}
+  .gate{font-size:12px;color:var(--amber);background:#fdf6e6;border:1px solid #f0e2bf;border-radius:7px;padding:6px 10px;margin:8px 0 12px}
+  .task{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-top:1px solid #f0f3f6}
+  .task input{margin-top:2px;width:17px;height:17px;flex-shrink:0;cursor:pointer}
+  .task label{cursor:pointer;font-size:13.3px;flex:1}
+  .task.done label{text-decoration:line-through;color:var(--muted)}
+  .who{font-size:9.5px;color:#7e8a98;background:#f0f3f6;border-radius:5px;padding:2px 7px;margin-left:auto;white-space:nowrap;flex-shrink:0}
+  .mtag{font-size:9px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:#1d6b3f;background:#e7f6ec;border:1px solid #bfe4cb;border-radius:5px;padding:2px 6px;white-space:nowrap;flex-shrink:0}
+  .stag{font-size:9px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:#5a3aa8;background:#efe9fb;border:1px solid #d6c8f2;border-radius:5px;padding:2px 6px;white-space:nowrap;flex-shrink:0}
+  .split{background:#eef4ff;border:1px solid #cfe0fb;border-radius:8px;padding:10px 13px;margin:10px 0;font-size:12.6px;color:#21466e}
+  .split b{color:#16345c}
+  .foot{color:var(--muted);font-size:11px;margin-top:24px}
+</style></head><body>
+<header>
+  <h1>ESA Fulfillment Checklist — The Client Journey (A → Z)</h1>
+  <div class="sub">Onboarding → marketing → tech build → sales → event → reporting → off-boarding. One system, every client. Tags: <b>Mktg</b> &amp; <b>Sales</b> tracks woven in. This is the ClickUp template.</div>
+  <div class="prog" id="prog">0 / 0 complete</div>
+  <div class="bar"><i id="barfill"></i></div>
+</header>
+<main>
+  <div class="rules">
+    <b>Ground rules (the 3 that protect every build):</b>
+    <ul>
+      <li><b>A2P starts Day 0–2.</b> The 72hr+ approval clock is the bottleneck — submit it before anything else.</li>
+      <li><b>Client deadlines are real.</b> Access, assets, approvals due fast. A client delay moves <i>their</i> date day-for-day — not ours.</li>
+      <li><b>Everything tracked in GHL.</b> No outside checkout or landing pages — that's what lets the Data team measure and prove ROI.</li>
+    </ul>
+  </div>
+  <div class="legend"><span class="mtag">Mktg</span> marketing track &nbsp; <span class="stag">Sales</span> sales track &nbsp;·&nbsp; Owners: <b>CSM</b> = Michaela · <b>Tech</b> = Shah · <b>Funnel</b> = Hamza · <b>Auto</b> = Jawad · <b>Ads</b> = Mal/Zoe · <b>Content</b> = Sohaib · <b>Editor</b> = video editor · <b>Sales</b> = Emanuela/closers · <b>Data</b> = Kim &amp; Kim · <b>Client</b> = the client · <b>Both</b> = joint</div>
+  <div id="phases"></div>
+  <div class="foot">ESA Fulfillment Checklist · the canonical client journey · checks save in your browser · load into ClickUp as the build template.</div>
+</main>
+<script>
+const phases=[
+ {n:"1",name:"Onboarding & Access",time:"Day 0–2",owner:"CSM",gate:"Access in hand + scope confirmed out loud",tasks:[
+   ["Signed agreement + payment confirmed","Both"],
+   ["Sale logged: summary, commission, offer + sales-call notes handed to fulfillment","Sales","S"],
+   ["Client pulled into the onboarding pipeline (triggers welcome)","Tech"],
+   ["Welcome email sent + kickoff call scheduled","CSM"],
+   ["Onboarding form sent + completed","Client"],
+   ["Marketing / Onboarding Survey completed → triggers team notification","Client","M"],
+   ["Sales / offer intake completed (current offer, price, sales process, team size)","Client","S"],
+   ["Grant Skool access — invite client + their team to the ESA portal/community","CSM"],
+   ["Kickoff call held","Both"],
+   ["Access collected LIVE: GHL, domain/DNS, Stripe, Meta ad account, calendar","Client"],
+   ["A2P business details collected (legal entity, EIN, address, sample msgs)","Client"],
+   ["Read access to Stripe / checkout confirmed (for attribution)","Client"],
+   ["Slack channel + client ClickUp board set up","CSM"],
+   ["Scope confirmed out loud — what's in / what's NOT","CSM"]]},
+ {n:"2",name:"Discovery, Assets & Target Audience",time:"Day 1–3",owner:"Both",gate:"Topic, offer, date, assets & TAP approved",tasks:[
+   ["Confirm event topic + core messaging","Both"],
+   ["Confirm event date & time (+ platform/link or venue)","Client"],
+   ["Confirm the offer & pricing presented at the event","Client"],
+   ["Define target audience / ICP","Both"],
+   ["Build the Ultimate Target Audience Profile (TAP)","Ads","M"],
+   ["Internal review + approve the TAP","Ads","M"],
+   ["Send TAP to client → client approves (GATE before creative)","Both","M"],
+   ["Collect brand assets (logo, colors, fonts)","Client"],
+   ["Collect testimonials, images, media (folder link)","Client"],
+   ["Collect headshots + speaker photos (for flyers/posters)","Client","M"],
+   ["Confirm VSL — or schedule scripting","Both"]]},
+ {n:"3",name:"Tech Setup, A2P & Ad Accounts",time:"Day 2–5",owner:"Tech",gate:"A2P submitted + GHL & Meta stack connected",tasks:[
+   ["Audit existing setup (only if migrating a CRM/GHL)","Tech"],
+   ["Create GHL sub-account (business details + team)","Tech"],
+   ["SUBMIT A2P 10DLC — Day 2, the 72hr+ clock starts now","Tech"],
+   ["Purchase phone number","Client"],
+   ["Import + customize snapshot (tags, pipelines, workflows, triggers, fields)","Tech"],
+   ["Create pipeline stages + disposition dropdowns","Tech"],
+   ["Connect domain (funnel)","Client"],
+   ["Connect subdomain + SPF/DKIM/DMARC (deliverability)","Client"],
+   ["Create / choose Meta ad account + confirm ESA access","Ads","M"],
+   ["Create / choose FB Page; connect to GHL","Ads","M"],
+   ["Client adds payment method to the ad account","Client","M"],
+   ["Install Meta Pixel + custom events (Opt-In + Purchase)","Ads","M"],
+   ["Provide old leads → upload + clean into GHL","Both"],
+   ["Build smart lists of hot leads to re-engage","Tech"],
+   ["Set up calendars + booking links for sales calls","Tech","S"]]},
+ {n:"4",name:"Funnel Build",time:"Day 4–10",owner:"Funnel",gate:"Funnel live + full QA passed",tasks:[
+   ["Build registration / opt-in form + connect to funnel","Funnel"],
+   ["Build registration, confirmation & replay pages","Funnel"],
+   ["Build FB Lead Form + map into GHL with opt-in automations","Ads + Tech","M"],
+   ["Build sales / booking page for the offer call","Funnel","S"],
+   ["Apply brand, testimonials & VSL","Funnel"],
+   ["Install website chat widget","Tech"],
+   ["Optimize for mobile + conversion","Funnel"],
+   ["Share draft with client → client approval (within 48h)","Both"],
+   ["Implement revisions; confirm domain + final approval","Both"],
+   ["Publish funnel live","Tech"],
+   ["Configure tracking — pixel, GA4, conversion events","Tech"],
+   ["Full end-to-end QA — register as a test lead; every email/text fires","Tech"]]},
+ {n:"5",name:"Automations, Nurture & AI Agent",time:"Day 10–14",owner:"Auto",gate:"All automations tested + AI agent live",tasks:[
+   ["Import + configure automation snapshot","Auto"],
+   ["Confirmations + internal notifications + SMS opener","Auto"],
+   ["Reminder sequence","Auto"],
+   ["Nurture sequence","Auto"],
+   ["Re-engagement / reactivation (begins T-14)","Auto"],
+   ["No-show automation","Auto"],
+   ["Replay automation","Auto"],
+   ["Pipeline stage-change + post-purchase (buyer) automations","Auto"],
+   ["DNC / compliance automations (honors opt-outs)","Auto"],
+   ["Booking calendar + video integration for sales calls","Tech","S"],
+   ["BUILD + TRAIN the AI Conversation Agent (reactivation / nurture / post-purchase)","Tech"],
+   ["Speed-to-lead — instant text to new leads + rep alerts","Auto"],
+   ["Test every workflow end-to-end","Tech"]]},
+ {n:"6",name:"Content & Ad Creative",time:"Day 12–15",owner:"Content + Ads",gate:"Nurture content + ad creative approved",tasks:[
+   ["Generate nurture + re-engagement copy","Content"],
+   ["Generate confirmation, reminder, no-show & replay copy","Content"],
+   ["Send all email/SMS copy to client → approve (within 48h)","CSM"],
+   ["Load approved content into all automations + re-test","Auto"],
+   ["Write 5 ad copies → approve top 3","Ads","M"],
+   ["Write 20 video scripts (Hook / Body / CTA) → approve top 10","Ads","M"],
+   ["Write VSL script (if applicable)","Ads","M"],
+   ["Send full creative package to client for approval","CSM","M"],
+   ["Send filming Loom → client records + uploads raw footage (notify in Slack)","Client","M"]]},
+ {n:"7",name:"Creative Build, Promotion & Ad Launch",time:"Day 15–20",owner:"Ads",gate:"Ads live + outreach loaded",tasks:[
+   ["Edit ads & VSL from footage + brand colors → internal approve → client approves","Editor","M"],
+   ["Create 50 static ad variations → client selects top 20","Ads","M"],
+   ["Design event flyer + speaker posters from headshots","Editor","M"],
+   ["Build audiences: 20 warm (engagers + visitors), cold interests (15–20), custom + lookalikes","Ads","M"],
+   ["SMS blast / email invitation to the database","Auto"],
+   ["Reactivation outreach to old leads (T-14)","Auto"],
+   ["PRE-LAUNCH CHECK: copy + ads + VSL approved; audiences built; funnel + automations live; pixel firing; ad access + payment set","Ads","M"],
+   ["Launch — Campaign 1: Lead Conversion → Registration Page","Ads","M"],
+   ["Launch — Campaign 2: FB Form Lead campaign (GHL form + opt-in automations)","Ads","M"],
+   ["Launch — Campaign 3: Purchase Conversion → Purchase Page","Ads","M"],
+   ["Go live on the client's own ad account (T-7); track CPL / registrations daily","Ads","M"]]},
+ {n:"8",name:"Sales System & Enablement",time:"Day 7–18",owner:"Sales",gate:"Offer, scripts, deck & sales pipeline built",tasks:[
+   ["Review the client's current offer, price & guarantee","Both","S"],
+   ["Structure the offer for the event (stack, bonuses, price, payment plans)","Both","S"],
+   ["Build the sales / closing script for the event offer","Sales","S"],
+   ["Build the objection-handling guide (top 10 objections)","Sales","S"],
+   ["Build the sales presentation / pitch deck","Sales","S"],
+   ["Build the order form / checkout in GHL (offer + payment plans)","Tech","S"],
+   ["Set up the sales pipeline + dispositions for closers","Tech","S"],
+   ["Configure Rex (AI sales agent) for speed-to-lead + booking","Tech","S"],
+   ["Set up commission / comp tracking for the client's reps","Sales","S"],
+   ["Define the day-of closer plan (ESA closers + AI support)","Sales","S"],
+   ["Build the follow-up / closing cadence for non-buyers","Sales","S"],
+   ["Confirm CRM access for the sales team + lead routing","Tech","S"]]},
+ {n:"9",name:"Sales Training & Team Readiness",time:"Day 14 → event",owner:"Sales",gate:"Client's team certified event-ready",tasks:[
+   ["Grant the client's sales team Skool access + assign training modules","CSM","S"],
+   ["Assign the ESA sales fundamentals course (Skool)","Sales","S"],
+   ["Walk the team through the offer, script & objection guide","Sales","S"],
+   ["Live role-play / practice closes with the client's reps","Sales","S"],
+   ["Train on the CRM, pipeline + disposition discipline","Sales","S"],
+   ["Train on speed-to-lead + follow-up standards","Sales","S"],
+   ["Review recorded role-plays + give feedback","Sales","S"],
+   ["Certify reps event-ready (sign-off)","Sales","S"],
+   ["Confirm day-of roles: who closes, who supports, who tracks","Both","S"],
+   ["Final sales-readiness check before event","Sales","S"]]},
+ {n:"10",name:"Optimization & Pacing",time:"Ongoing → event",owner:"Ads + Data",gate:"Pacing to registration goal",tasks:[
+   ["DAILY: optimize creative / audiences / budget — kill losers, scale winners","Ads","M"],
+   ["DAILY data report: CPL, registrations, show rate, conversions, ROAS","Data","M"],
+   ["Optimize the AI agent's responses + flows (weekly QA)","Tech"],
+   ["Build + run the 'Yes' campaign to qualify unresponsive leads","Auto"],
+   ["Refine email/SMS copy off lead responses + data","Content"],
+   ["Funnel improvements off conversion data; A/B test","Funnel"],
+   ["Audit lead quality; clean + re-segment","Data"],
+   ["Pacing check vs registration goal; adjust spend","Ads","M"],
+   ["WEEKLY: Data team reports the numbers (regs, show rate, CPL, conversions)","Data"]]},
+ {n:"11",name:"The Room — Event Day",time:"Event day",owner:"Both",gate:"Event delivered + offer made + sales captured",tasks:[
+   ["Final tech check with client / host","Both"],
+   ["Verify day-of reminders firing; pause all promo automations","Tech"],
+   ["Confirm webinar link / venue + AV tested","Both"],
+   ["Brief the closing team + assign attendees / leads","Sales","S"],
+   ["Monitor live registrations / attendance","Data"],
+   ["Provide live support during the event","Both"],
+   ["Offer made from the stage / screen","Both"],
+   ["Closers + AI agent work the room / chat in real time","Sales","S"],
+   ["Capture order forms / payments live","Sales","S"],
+   ["Capture / save the recording for replay","Client"]]},
+ {n:"12",name:"Post-Event → CLIENT COLLECTS",time:"T+0 to T+30",owner:"Auto + Sales + CSM",gate:"Client collecting + revenue attributed in GHL",tasks:[
+   ["Trigger replay automation + replay email (T+0–1)","Auto"],
+   ["Follow-up sequence — attendees vs no-shows","Auto"],
+   ["Activate booking / sales-call automation for the offer","Auto"],
+   ["AI agent + closers work non-buyers (days 8–10 = peak window)","Sales","S"],
+   ["Closers run booked sales calls; log dispositions","Sales","S"],
+   ["Move buyers into purchased pipeline + post-purchase automations","Auto"],
+   ["Sales tracked in GHL — NO outside checkout (protects attribution)","Data"],
+   ["Reconcile sales + commissions with the client's team","Sales","S"],
+   ["✦ CLIENT COLLECTING REVENUE — confirm payments / wires in","CSM"],
+   ["Wind down / pause ads","Ads","M"]]},
+ {n:"13",name:"Reporting & Client Success",time:"Weekly + post-event",owner:"CSM + Data",gate:"Client informed + results reported",tasks:[
+   ["Daily scorecard delivered to the ops call","Data"],
+   ["Weekly client report compiled (Kim & Kim → Michaela)","Data"],
+   ["Weekly report delivered in Slack by Michaela","CSM"],
+   ["Friday update: what was completed + the numbers","CSM"],
+   ["Weekly 1:1 call with client (first 30 days, then as needed)","CSM"],
+   ["Celebrate client wins (shout-outs, milestones)","CSM"],
+   ["Log issues / escalations; loop in the right owner","CSM"],
+   ["Post-event results report (within 48h)","Data"],
+   ["Full performance report — regs, show rate, sales, ROAS","Data"],
+   ["Confirm the next-step plan with the client","CSM"]]},
+ {n:"14",name:"Renewal & Ascension",time:"30 days before contract end",owner:"CSM",gate:"Next engagement signed or recurring started",tasks:[
+   ["RENEWAL conversation — start 30 days before contract end; tie window to event date","CSM"],
+   ["Present results + the case for the next engagement","Both"],
+   ["Offer ascension: ongoing webinars ($3K/mo), ads + data ($2,500/mo), or live event","CSM","S"],
+   ["Collect testimonial + case-study assets","CSM"],
+   ["Ask for referrals / warm intros","CSM","S"],
+   ["Sign the next engagement / start the recurring","Both","S"],
+   ["Update the pipeline + ladder for the renewal","Tech"]]},
+ {n:"15",name:"Off-boarding & Handover",time:"At contract end (no renewal)",owner:"CSM + Tech",gate:"Data exported, access settled, client archived",tasks:[
+   ["Off-boarding decision confirmed (not renewing)","CSM"],
+   ["Schedule + hold the off-boarding call","CSM"],
+   ["Final performance + results report delivered","Data"],
+   ["Export client data (leads, contacts, reports, recordings)","Tech"],
+   ["Hand over assets (funnel, creative, copy, recordings)","Tech"],
+   ["Transfer or revoke access per agreement (GHL, Meta, domain)","Tech"],
+   ["Reclaim ESA assets / remove ESA-owned integrations","Tech"],
+   ["Final invoice + settle all payments","Data"],
+   ["Exit survey + final testimonial request","CSM"],
+   ["Revoke or move Skool access to alumni","CSM"],
+   ["Remove from active boards; archive client folder + Slack","CSM"],
+   ["Referral / future re-engagement ask","CSM","S"]]},
+];
+const TRACK={ "11":"<div class='split'><b>Virtual track:</b> confirm the webinar link is live &amp; tested; Zoom/room set up. &nbsp; <b>Live track:</b> confirm venue, run-of-show, AV, day-of logistics, and any on-site/travel — layered on top of the same tasks above.</div>" };
+const wrap=document.getElementById("phases");
+let total=0;
+phases.forEach(p=>{
+  const d=document.createElement("div");d.className="phase";
+  d.innerHTML=`<div class="ph"><span class="num">${p.n}</span><span class="pname">${p.name}</span><span class="pill time">${p.time}</span><span class="pill own">${p.owner}</span></div><div class="gate"><b>Gate to advance:</b> ${p.gate}</div>`;
+  p.tasks.forEach((t,i)=>{
+    total++;
+    const key="ff2_"+p.n+"_"+i;
+    const row=document.createElement("div");row.className="task";
+    const cb=document.createElement("input");cb.type="checkbox";cb.id=key;
+    const lab=document.createElement("label");lab.htmlFor=key;lab.textContent=t[0];
+    const who=document.createElement("span");who.className="who";who.textContent=t[1];
+    if(localStorage.getItem(key)==="1"){cb.checked=true;row.classList.add("done");}
+    cb.onchange=()=>{localStorage.setItem(key,cb.checked?"1":"0");row.classList.toggle("done",cb.checked);count();};
+    row.appendChild(cb);row.appendChild(lab);
+    if(t[2]==="M"){const m=document.createElement("span");m.className="mtag";m.textContent="Mktg";row.appendChild(m);}
+    if(t[2]==="S"){const s=document.createElement("span");s.className="stag";s.textContent="Sales";row.appendChild(s);}
+    row.appendChild(who);d.appendChild(row);
+  });
+  if(TRACK[p.n]){const s=document.createElement("div");s.innerHTML=TRACK[p.n];d.appendChild(s.firstChild);}
+  wrap.appendChild(d);
+});
+function count(){let done=0;document.querySelectorAll(".task input").forEach(c=>{if(c.checked)done++;});document.getElementById("prog").textContent=done+" / "+total+" complete";document.getElementById("barfill").style.width=(total?Math.round(done/total*100):0)+"%";}
+count();
+</script>
+</body></html>
