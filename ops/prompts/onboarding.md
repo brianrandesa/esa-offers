@@ -70,6 +70,11 @@ Post to **#esa-admin** a kickoff summary containing:
   ads-live deadline (within 72 hours of close)
 - Reminder that the scope document is due to the client within 24 hours
 
+## Step 3 — Generate the scope document
+
+Follow `ops/prompts/scope-doc.md`, then include the scope doc link in the
+kickoff Slack post from Step 2.
+
 ## Guardrails
 
 - Don't create duplicate boards — search the workspace for the client name
