@@ -1,0 +1,166 @@
+Phase #,Phase Name,Timeline,Phase Owner,Gate to Advance,Task,Task Owner,Track
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Signed agreement + payment confirmed,Both,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,"Sale logged: summary, commission, offer + sales-call notes handed to fulfillment",Sales,S
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Client pulled into the onboarding pipeline (triggers welcome),Tech,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Welcome email sent + kickoff call scheduled,CSM,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Onboarding form sent + completed,Client,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Marketing / Onboarding Survey completed → triggers team notification,Client,M
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,"Sales / offer intake completed (current offer, price, sales process, team size)",Client,S
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Grant Skool access — invite client + their team to the ESA portal/community,CSM,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Kickoff call held,Both,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,"Access collected LIVE: GHL, domain/DNS, Stripe, Meta ad account, calendar",Client,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,"A2P business details collected (legal entity, EIN, address, sample msgs)",Client,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Read access to Stripe / checkout confirmed (for attribution),Client,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Slack channel + client ClickUp board set up,CSM,
+1,Onboarding & Access,Day 0–2,CSM,Access in hand + scope confirmed out loud,Scope confirmed out loud — what's in / what's NOT,CSM,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Confirm event topic + core messaging,Both,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Confirm event date & time (+ platform/link or venue),Client,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Confirm the offer & pricing presented at the event,Client,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Define target audience / ICP,Both,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Build the Ultimate Target Audience Profile (TAP),Ads,M
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Internal review + approve the TAP,Ads,M
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Send TAP to client → client approves (GATE before creative),Both,M
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved","Collect brand assets (logo, colors, fonts)",Client,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved","Collect testimonials, images, media (folder link)",Client,
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Collect headshots + speaker photos (for flyers/posters),Client,M
+2,"Discovery, Assets & Target Audience",Day 1–3,Both,"Topic, offer, date, assets & TAP approved",Confirm VSL — or schedule scripting,Both,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Audit existing setup (only if migrating a CRM/GHL),Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Create GHL sub-account (business details + team),Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,"SUBMIT A2P 10DLC — Day 2, the 72hr+ clock starts now",Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Purchase phone number,Client,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,"Import + customize snapshot (tags, pipelines, workflows, triggers, fields)",Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Create pipeline stages + disposition dropdowns,Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Connect domain (funnel),Client,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Connect subdomain + SPF/DKIM/DMARC (deliverability),Client,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Create / choose Meta ad account + confirm ESA access,Ads,M
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Create / choose FB Page; connect to GHL,Ads,M
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Client adds payment method to the ad account,Client,M
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Install Meta Pixel + custom events (Opt-In + Purchase),Ads,M
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Provide old leads → upload + clean into GHL,Both,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Build smart lists of hot leads to re-engage,Tech,
+3,"Tech Setup, A2P & Ad Accounts",Day 2–5,Tech,A2P submitted + GHL & Meta stack connected,Set up calendars + booking links for sales calls,Tech,S
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Build registration / opt-in form + connect to funnel,Funnel,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,"Build registration, confirmation & replay pages",Funnel,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Build FB Lead Form + map into GHL with opt-in automations,Ads + Tech,M
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Build sales / booking page for the offer call,Funnel,S
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,"Apply brand, testimonials & VSL",Funnel,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Install website chat widget,Tech,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Optimize for mobile + conversion,Funnel,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Share draft with client → client approval (within 48h),Both,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Implement revisions; confirm domain + final approval,Both,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Publish funnel live,Tech,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,"Configure tracking — pixel, GA4, conversion events",Tech,
+4,Funnel Build,Day 4–10,Funnel,Funnel live + full QA passed,Full end-to-end QA — register as a test lead; every email/text fires,Tech,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Import + configure automation snapshot,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Confirmations + internal notifications + SMS opener,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Reminder sequence,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Nurture sequence,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Re-engagement / reactivation (begins T-14),Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,No-show automation,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Replay automation,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Pipeline stage-change + post-purchase (buyer) automations,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,DNC / compliance automations (honors opt-outs),Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Booking calendar + video integration for sales calls,Tech,S
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,BUILD + TRAIN the AI Conversation Agent (reactivation / nurture / post-purchase),Tech,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Speed-to-lead — instant text to new leads + rep alerts,Auto,
+5,"Automations, Nurture & AI Agent",Day 10–14,Auto,All automations tested + AI agent live,Test every workflow end-to-end,Tech,
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Generate nurture + re-engagement copy,Content,
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,"Generate confirmation, reminder, no-show & replay copy",Content,
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Send all email/SMS copy to client → approve (within 48h),CSM,
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Load approved content into all automations + re-test,Auto,
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Write 5 ad copies → approve top 3,Ads,M
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Write 20 video scripts (Hook / Body / CTA) → approve top 10,Ads,M
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Write VSL script (if applicable),Ads,M
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Send full creative package to client for approval,CSM,M
+6,Content & Ad Creative,Day 12–15,Content + Ads,Nurture content + ad creative approved,Send filming Loom → client records + uploads raw footage (notify in Slack),Client,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Edit ads & VSL from footage + brand colors → internal approve → client approves,Editor,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Create 50 static ad variations → client selects top 20,Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Design event flyer + speaker posters from headshots,Editor,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,"Build audiences: 20 warm (engagers + visitors), cold interests (15–20), custom + lookalikes",Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,SMS blast / email invitation to the database,Auto,
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Reactivation outreach to old leads (T-14),Auto,
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,PRE-LAUNCH CHECK: copy + ads + VSL approved; audiences built; funnel + automations live; pixel firing; ad access + payment set,Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Launch — Campaign 1: Lead Conversion → Registration Page,Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Launch — Campaign 2: FB Form Lead campaign (GHL form + opt-in automations),Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Launch — Campaign 3: Purchase Conversion → Purchase Page,Ads,M
+7,"Creative Build, Promotion & Ad Launch",Day 15–20,Ads,Ads live + outreach loaded,Go live on the client's own ad account (T-7); track CPL / registrations daily,Ads,M
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built","Review the client's current offer, price & guarantee",Both,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built","Structure the offer for the event (stack, bonuses, price, payment plans)",Both,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Build the sales / closing script for the event offer,Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Build the objection-handling guide (top 10 objections),Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Build the sales presentation / pitch deck,Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Build the order form / checkout in GHL (offer + payment plans),Tech,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Set up the sales pipeline + dispositions for closers,Tech,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Configure Rex (AI sales agent) for speed-to-lead + booking,Tech,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Set up commission / comp tracking for the client's reps,Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Define the day-of closer plan (ESA closers + AI support),Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Build the follow-up / closing cadence for non-buyers,Sales,S
+8,Sales System & Enablement,Day 7–18,Sales,"Offer, scripts, deck & sales pipeline built",Confirm CRM access for the sales team + lead routing,Tech,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Grant the client's sales team Skool access + assign training modules,CSM,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Assign the ESA sales fundamentals course (Skool),Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,"Walk the team through the offer, script & objection guide",Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Live role-play / practice closes with the client's reps,Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,"Train on the CRM, pipeline + disposition discipline",Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Train on speed-to-lead + follow-up standards,Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Review recorded role-plays + give feedback,Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Certify reps event-ready (sign-off),Sales,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,"Confirm day-of roles: who closes, who supports, who tracks",Both,S
+9,Sales Training & Team Readiness,Day 14 → event,Sales,Client's team certified event-ready,Final sales-readiness check before event,Sales,S
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,"DAILY: optimize creative / audiences / budget — kill losers, scale winners",Ads,M
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,"DAILY data report: CPL, registrations, show rate, conversions, ROAS",Data,M
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Optimize the AI agent's responses + flows (weekly QA),Tech,
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Build + run the 'Yes' campaign to qualify unresponsive leads,Auto,
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Refine email/SMS copy off lead responses + data,Content,
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Funnel improvements off conversion data; A/B test,Funnel,
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Audit lead quality; clean + re-segment,Data,
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,Pacing check vs registration goal; adjust spend,Ads,M
+10,Optimization & Pacing,Ongoing → event,Ads + Data,Pacing to registration goal,"WEEKLY: Data team reports the numbers (regs, show rate, CPL, conversions)",Data,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Final tech check with client / host,Both,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Verify day-of reminders firing; pause all promo automations,Tech,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Confirm webinar link / venue + AV tested,Both,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Brief the closing team + assign attendees / leads,Sales,S
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Monitor live registrations / attendance,Data,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Provide live support during the event,Both,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Offer made from the stage / screen,Both,
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Closers + AI agent work the room / chat in real time,Sales,S
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Capture order forms / payments live,Sales,S
+11,The Room — Event Day,Event day,Both,Event delivered + offer made + sales captured,Capture / save the recording for replay,Client,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Trigger replay automation + replay email (T+0–1),Auto,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Follow-up sequence — attendees vs no-shows,Auto,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Activate booking / sales-call automation for the offer,Auto,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,AI agent + closers work non-buyers (days 8–10 = peak window),Sales,S
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Closers run booked sales calls; log dispositions,Sales,S
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Move buyers into purchased pipeline + post-purchase automations,Auto,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Sales tracked in GHL — NO outside checkout (protects attribution),Data,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Reconcile sales + commissions with the client's team,Sales,S
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,✦ CLIENT COLLECTING REVENUE — confirm payments / wires in,CSM,
+12,Post-Event → CLIENT COLLECTS,T+0 to T+30,Auto + Sales + CSM,Client collecting + revenue attributed in GHL,Wind down / pause ads,Ads,M
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Daily scorecard delivered to the ops call,Data,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Weekly client report compiled (Kim & Kim → Michaela),Data,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Weekly report delivered in Slack by Michaela,CSM,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Friday update: what was completed + the numbers,CSM,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,"Weekly 1:1 call with client (first 30 days, then as needed)",CSM,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,"Celebrate client wins (shout-outs, milestones)",CSM,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Log issues / escalations; loop in the right owner,CSM,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Post-event results report (within 48h),Data,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,"Full performance report — regs, show rate, sales, ROAS",Data,
+13,Reporting & Client Success,Weekly + post-event,CSM + Data,Client informed + results reported,Confirm the next-step plan with the client,CSM,
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,RENEWAL conversation — start 30 days before contract end; tie window to event date,CSM,
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,Present results + the case for the next engagement,Both,
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,"Offer ascension: ongoing webinars ($3K/mo), ads + data ($2,500/mo), or live event",CSM,S
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,Collect testimonial + case-study assets,CSM,
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,Ask for referrals / warm intros,CSM,S
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,Sign the next engagement / start the recurring,Both,S
+14,Renewal & Ascension,30 days before contract end,CSM,Next engagement signed or recurring started,Update the pipeline + ladder for the renewal,Tech,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Off-boarding decision confirmed (not renewing),CSM,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Schedule + hold the off-boarding call,CSM,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Final performance + results report delivered,Data,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived","Export client data (leads, contacts, reports, recordings)",Tech,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived","Hand over assets (funnel, creative, copy, recordings)",Tech,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived","Transfer or revoke access per agreement (GHL, Meta, domain)",Tech,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Reclaim ESA assets / remove ESA-owned integrations,Tech,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Final invoice + settle all payments,Data,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Exit survey + final testimonial request,CSM,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Revoke or move Skool access to alumni,CSM,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Remove from active boards; archive client folder + Slack,CSM,
+15,Off-boarding & Handover,At contract end (no renewal),CSM + Tech,"Data exported, access settled, client archived",Referral / future re-engagement ask,CSM,S
