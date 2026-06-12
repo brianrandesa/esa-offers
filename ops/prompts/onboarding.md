@@ -55,12 +55,18 @@ and stop. Do not build a partial board.
 8. Apply the Track column as tags: `M` = marketing track, `S` = sales track,
    blank = both.
 
-## Step 2 — Post the kickoff summary to Slack
+## Step 2 — Generate the scope document
+
+Follow `ops/prompts/scope-doc.md`. The scope doc link goes into the
+kickoff Slack post in Step 3.
+
+## Step 3 — Post the kickoff summary to Slack
 
 Post to **#esa-admin** a kickoff summary containing:
 
 - Client name, close date, event date, event type
 - Link to the new ClickUp board
+- Link to the scope doc draft from Step 2
 - The milestone schedule by phase (phase name → due window)
 - **Owner tags by milestone**: tag each phase owner on their phase
   (Michaela on Onboarding/CSM phases, Shah on Tech Setup, Hamza on Funnel
