@@ -1,12 +1,14 @@
 # New Client Onboarding — Build the ClickUp Board + Kickoff
 
-Use this prompt when a new client closes. Inputs you need before starting
-(ask if not provided):
+Use this prompt when a new client closes. Inputs you need before starting.
+If client name or event date is missing, post what's missing to #esa-admin
+and stop. Do not build a partial board.
 
 - **Client name** (used for the board/list name)
 - **Close date** (Day 0 — defaults to today)
 - **Event date** (drives all due-date math)
 - **Event type** (virtual or live)
+- **Contract end date** (defaults to close date + 90 days unless specified)
 
 ## Step 1 — Build the ClickUp client board
 
@@ -16,12 +18,20 @@ Use this prompt when a new client closes. Inputs you need before starting
 2. In the ESA ClickUp workspace, create a new list/board named for the
    client (match the naming convention of existing client boards — check the
    workspace hierarchy first).
-3. Create one task per CSV row, grouped by phase (use the phase as the
+3. Write a machine-readable block into the list description (the daily
+   sweep and Friday report read their dates from here):
+
+   ```
+   CLOSE_DATE: YYYY-MM-DD | EVENT_DATE: YYYY-MM-DD | EVENT_TYPE: virtual/live | CONTRACT_END: YYYY-MM-DD
+   ```
+
+   `CONTRACT_END` is close date + 90 days unless specified.
+4. Create one task per CSV row, grouped by phase (use the phase as the
    section/status grouping or a `Phase N — Name` prefix, matching how other
    client boards are structured). Include the Gate to Advance in each
    phase's first task description or as a phase-level task so the gate is
    visible.
-4. **Due dates are calculated backward from the client's event date**, using
+5. **Due dates are calculated backward from the client's event date**, using
    each phase's Timeline column:
    - "Day X–Y" timelines anchor forward from the close date (Day 0), but
      verify the resulting schedule still lands before the event date. If the
@@ -33,21 +43,21 @@ Use this prompt when a new client closes. Inputs you need before starting
      anchor forward from the event date.
    - Phase 14 (Renewal) anchors to 30 days before contract end; Week 10 of
      the engagement is the mandatory renewal-conversation date.
-5. **A2P tasks are Day 0 priority.** Every task mentioning A2P (collection
+6. **A2P tasks are Day 0 priority.** Every task mentioning A2P (collection
    of A2P business details in Phase 1, A2P 10DLC submission in Phase 3) gets
    urgent/highest priority and a due date no later than Day 2. The 72hr+
    approval clock is the #1 bottleneck — these never slip.
-6. Assign task owners per the CSV's Task Owner column using the ESA owner
+7. Assign task owners per the CSV's Task Owner column using the ESA owner
    mapping in `CLAUDE.md` (CSM=Michaela, Tech=Shah, Funnel=Hamza, Auto=Jawad,
    Ads=Mal/Zoe, Content=Sohaib, Sales=Emanuela/closers, Data=Kim & Kim).
    Tag `Client`-owned tasks so they're filterable — client delays move the
    event date day-for-day, not our timeline.
-7. Apply the Track column as tags: `M` = marketing track, `S` = sales track,
+8. Apply the Track column as tags: `M` = marketing track, `S` = sales track,
    blank = both.
 
 ## Step 2 — Post the kickoff summary to Slack
 
-Post to the **ESA Admin** Slack channel a kickoff summary containing:
+Post to **#esa-admin** a kickoff summary containing:
 
 - Client name, close date, event date, event type
 - Link to the new ClickUp board
@@ -64,5 +74,6 @@ Post to the **ESA Admin** Slack channel a kickoff summary containing:
 
 - Don't create duplicate boards — search the workspace for the client name
   first; if a board already exists, stop and report instead.
-- If the event date or close date is missing, ask — don't guess.
+- If client name or event date is missing, post what's missing to
+  #esa-admin and stop — never build a partial board or guess dates.
 - All ESA rules in `CLAUDE.md` apply.

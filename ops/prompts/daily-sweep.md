@@ -1,13 +1,21 @@
 # Daily Fulfillment Sweep — Standup Brief
 
-Run every weekday morning. The brief must be posted to the **ESA Admin**
-Slack channel **by 10:00am ET**, ahead of the 10:30am ET fulfillment standup.
+Run every weekday morning. The brief must be posted to **#esa-admin**
+**by 10:00am ET**, ahead of the 10:30am ET fulfillment standup.
 
 ## Step 1 — Scan all active client boards
 
 Pull every active client board/list from the ESA ClickUp workspace (skip
-archived/off-boarded clients). For each client, determine close date, event
-date, current phase, and task statuses.
+archived/off-boarded clients). For each client, read the machine-readable
+block from the list description:
+
+```
+CLOSE_DATE: YYYY-MM-DD | EVENT_DATE: YYYY-MM-DD | EVENT_TYPE: virtual/live | CONTRACT_END: YYYY-MM-DD
+```
+
+Use these dates — do not infer them from task data. If a board is missing
+the block, flag it in the brief as a setup gap. Then determine each
+client's current phase and task statuses.
 
 ## Step 2 — Flag, in this order
 
@@ -28,7 +36,7 @@ date, current phase, and task statuses.
    Advance" condition unmet while the next phase's window has started).
    Name the gate, the unmet tasks, and the owner who can unblock it.
 
-## Step 3 — Post the standup brief to ESA Admin Slack
+## Step 3 — Post the standup brief to #esa-admin
 
 Format:
 
